@@ -18,9 +18,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --upgrade pip
 
-# Install face_recognition_models first, directly from GitHub
-RUN pip install git+https://github.com/ageitgey/face_recognition_models
-
 # Now install the rest of your requirements
 RUN pip install -r requirements.txt
 
