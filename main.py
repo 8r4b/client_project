@@ -9,6 +9,7 @@ import cv2
 import face_recognition
 import numpy as np
 
+os.environ['DLIB_USE_CUDA'] = '0'
 # Initialize app
 app = FastAPI()
 
