@@ -1,0 +1,132 @@
+body {
+  background: #f7f9fb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222; /* Darker default text */
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+
+h2 {
+  text-align: center;
+  color: #1a237e; /* Deep blue for title */
+  margin-bottom: 2rem;
+}
+
+h4, h5 {
+  color: #263238; /* Darker headings */
+}
+
+.flex-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex: 1;
+  min-width: 320px;
+}
+
+.section {
+  background: #f3f6fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+button, input[type="submit"] {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled), input[type="submit"]:hover:not(:disabled) {
+  background: #1565c0;
+}
+
+.status {
+  margin: 1em 0;
+  color: #388e3c;
+  font-weight: 500;
+}
+
+ul {
+  padding-left: 1.2em;
+  color: #222; /* Ensure list text is dark */
+}
+
+.unique-faces {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.face-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  padding: 0.5rem;
+  text-align: center;
+  width: 100px;
+  color: #222; /* Ensure face name is dark */
+}
+
+.face-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+
+.known-faces-list {
+  margin-top: 1em;
+}
+
+.known-face-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.5em;
+  background: #e3eaf3;
+  border-radius: 5px;
+  padding: 0.3em 0.7em;
+  color: #263238; /* Darker text for known faces */
+}
+
+.known-face-item button {
+  background: #e53935;
+  color: #fff;
+  padding: 0.2em 0.7em;
+  font-size: 0.95em;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.known-face-item button:hover {
+  background: #b71c1c;
+}

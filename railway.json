@@ -1,5 +1,0 @@
-{
-  "build": {
-    "postinstall": "pip install git+https://github.com/ageitgey/face_recognition_models && pip install face_recognition"
-  }
-}
